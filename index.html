@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d5cc6f9aea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="new img.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Pavan Alandkar</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pavan image.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Pavan, a recent graduate in BE from Pune University, passionate
+                        about software development. Proficient in Java, and JavaScript, I have experience in web
+                        development, database management, and software engineering. My academic projects, including
+                        developing a web application for portfolio , have strengthened my skills in
+                        both frontend and backend development. I excel in collaborative environments, am dedicated to
+                        writing clean, efficient code, and am eager to continuously learn and grow. I am excited to
+                        contribute to innovative software solutions and advance my career in the tech industry.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience', this)">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education', this)">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Developing Java application</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>CPP</span><br>Competitive programming. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <li><span>Feb 24-Mar 24</span><br>Intern at VIEH Group</li>
+                            <li><span>Jan 24-Mar 24</span><br>Training at TNS</li>
+                            <li><span>Jun 23-Aug 23</span><br>Intern at Persistent Systems</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>2024</span><br>BE in Information Technology</li>
+                            <li><span>2020</span><br>HSC from NMV Jr. College</li>
+                            <li><span>2018</span><br>SSC from Maharashtra State Board</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I design and develop robust, scalable web applications using Java, Spring Boot, and related
+                        technologies. From front-end interfaces to back-end processing, I create secure and
+                        high-performance web solutions tailored to your business needs. Leveraging agile methodologies,
+                        I ensure efficient and adaptable applications that enhance your online presence.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Database Management</h2>
+                    <p>I specialize in designing, implementing, and managing relational databases to ensure data
+                        integrity, security, and optimal performance. Utilizing SQL and ORM frameworks like Hibernate, I
+                        create efficient database schemas, perform complex queries, and handle data migration. My
+                        services include regular maintenance, backup, and optimization to support your application's
+                        scalability and reliability.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>java projects</h2>
+                    <p>I specialize in developing custom Java applications tailored to your business needs. From initial
+                        analysis to deployment, I create secure, high-performance, and scalable solutions. Using best
+                        practices and agile methodologies, I ensure efficient and adaptable software, whether it's a
+                        standalone application or a complex enterprise system.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titles">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="work-image-container">
+                        <img src="work1.jpg" alt="">
+                        <div class="layer">
+                            <h3>Shopping App.</h3>
+                            <p>Developed a Java-based shopping application featuring user authentication, product
+                                management, shopping cart functionality, order processing, and payment integration.
+                                Utilized Java, Spring Boot, Hibernate for backend, and React for frontend. Ensured
+                                scalability, security, and a seamless user experience with responsive design and
+                                efficient database management.</p>
+                            <a href="#">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="work-image-container">
+                        <img src="work2.jpg" alt="">
+                        <div class="layer">
+                            <h3>Dice Game</h3>
+                            <p>Developed a basic dice game using HTML for structure, CSS for styling, and JavaScript for
+                                functionality. Players roll two dice and compete to reach a target score. Features
+                                include random dice rolls, score tracking, and a responsive design for different
+                                devices.</p>
+                            <a href="#">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="work-image-container">
+                        <img src="work3.jpg" alt="">
+                        <div class="layer">
+                            <h3>Portfolio Website </h3>
+                            <p>Created a portfolio website using HTML5, CSS3, and JavaScript with a responsive layout.
+                                Designed to showcase projects, skills, and contact information effectively across
+                                various devices. Implemented smooth navigation, interactive elements, and optimized
+                                loading times for a seamless user experience.</p>
+                            <a href="#">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn"> See More</a>
+
+        </div>
+    </div>
+
+    <!---------------------Contact----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> pavanalandkar8390@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>8390126685</p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/alandkarpavan80?igsh=NTBxY3pveXMxcmVs"><i
+                                class="fa-brands fa-facebook"></i> </a>
+                        <a href="https://www.instagram.com/alandkarpavan80?igsh=NTBxY3pveXMxcmVs"><i
+                                class="fa-brands fa-instagram"></i> </a>
+                        <a
+                            href="https://www.linkedin.com/in/pavan-alandkar-389736249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fa-brands fa-linkedin"></i> </a>
+                    </div>
+                    <a href="pavan Alandkar Resume.pdf" download class="btn btn2"> Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ pavan made with <i class="fa-solid fa-heart"></i>youtube </p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-content");
+
+            function opentab(tabname, element) {
+                for (var i = 0; i < tablinks.length; i++) {
+                    tablinks[i].classList.remove("active-link");
+                }
+                for (var i = 0; i < tabcontents.length; i++) {
+                    tabcontents[i].classList.remove("active-tab");
+                }
+                element.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+            // Assign the opentab function to the global window object so it can be called from the HTML
+            window.opentab = opentab;
+        });
+    </script>
+    <script>
+        var sidemwnu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwqb1GULhtzAYb5f_EGfzn6gLj4rt5hgDAsPy9_etQL6UFdcPRDqjaapxQUAjK86aVY/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
